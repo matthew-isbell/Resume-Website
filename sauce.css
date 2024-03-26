@@ -1,0 +1,378 @@
+html {
+    overflow: hidden;
+}
+
+#master-container{
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: yellow;
+    height: 100vh;
+}
+
+
+/*
+//////////////////////////////////////////
+
+this section formats and colors the "open tabs" 
+which is really just the divs
+
+//////////////////////////////////////////
+*/
+
+#left-container{
+    float: left;
+    width: 20%;
+    height: 100%;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+}
+
+#top-left-container{
+    border-style: solid;
+    border-width: 5px;
+    height: 54%;
+    width: 100%;
+    background-color: brown;
+}
+
+#bottom-left-container{
+    border-style: solid;
+    border-width: 5px;
+    margin-top: 3%;
+    width: 100%;
+    height: 28%;
+    background-color: grey;
+}
+
+#top-middle-container{
+    float: left;
+    border-style: solid;
+    border-width: 5px;
+    background-color: red;
+    top: 0;
+    left: auto;
+    margin-top: 2%;
+    width: 50%;
+    height: 85%;
+}
+
+#top-right-container{
+    float: left;
+    background-color: greenyellow;
+    border-style: solid;
+    border-width: 5px;
+    top: 0;
+    right: 0;
+    width: 22%;
+    margin-top: 2%;
+    margin-left: 1%;
+    height: 76%;
+
+}
+
+#bottom-middle-container{
+    position: fixed;
+    border-style: solid;
+    border-width: 5px;
+    bottom: 0;
+    width: 99%;
+    background-color: blueviolet;
+}
+
+/*
+//////////////////////////////////////////
+
+this section formats and colors the "tab names"
+this will be more divs inside of the original ones
+
+//////////////////////////////////////////
+*/
+
+
+/* //////////////////////// */
+/* this is the top left tab */
+#tab-tlc-name{
+    position: relative;
+    float: left;
+    top: 0;
+    left: 0;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: blue;
+    overflow: auto;
+}
+
+#tab-tlc-name h3 {
+    margin: 0;
+}
+
+#close-tab-tlc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: solid;
+    border-width: 5px;
+    padding-right: 1%;
+    padding-left: 2%;
+    width: calc(2vh + 1%);
+    height: auto;
+    overflow: hidden;
+}
+
+#tlc-filling {
+    float: left;
+    border: solid;
+    border-width: 5px;
+    width: 93%;
+    height: 89%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#close-tab-tlc:hover {
+    background-color: darkblue;
+    transition: background-color 0.4s ease;
+}
+
+/* /////////////////////////// */
+/* this is the bottom left tab */
+#tab-blc-name{
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: orange;
+    overflow: auto;
+}
+
+#tab-blc-name h3 {
+    margin: 0;
+}
+
+#close-tab-blc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: solid;
+    border-width: 4px;
+    padding-right: 1%;
+    padding-left: 2%;
+    width: calc(2vh + 1%);
+    height: auto;
+    overflow: hidden;
+}
+
+#blc-filling {
+    float: left;
+    border: solid;
+    border-width: 4px;
+    width: 94%;
+    height: 80%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#close-tab-blc:hover {
+    background-color: darkblue;
+    transition: background-color 0.4s ease;
+}
+
+/* /////////////////////////// */
+/* this is the top middle tab */
+#tab-tmc-name{
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: green;
+    overflow: auto;
+}
+
+#tab-tmc-name h3 {
+    margin: 0;
+}
+
+#close-tab-tmc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: solid;
+    border-width: 5px;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: calc(1vh + 1%);
+    height: auto;
+    overflow: hidden;
+}
+
+#tmc-filling {
+    float: left;
+    border: solid;
+    border-width: 4px;
+    width: 96%;
+    height: 90%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#close-tab-tmc:hover {
+    background-color: darkblue;
+    transition: background-color 0.4s ease;
+}
+
+
+/* ///////////////////////// */
+/* this is the projects file that people can click on */
+#project-div {
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5px;
+}
+
+#project-test {
+    height: 13vh;
+}
+
+#project-div:hover {
+    background-color: rgba(0, 0, 139, 0.281);
+    transition: background-color 0.2s ease;
+    border-radius: 5%;
+}
+
+/* ///////////////////////// */
+/* this is the projects file that actually oepns up! */
+#overlay {
+    position: absolute;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: blue;
+    overflow: auto;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+#tab-pf-contents {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+#tab-pf-name h3 {
+    margin: 0;
+}
+
+#tab-pf-name {
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: orange;
+    overflow: hidden;
+}
+
+#project-text-file{
+    position: absolute;
+    border: solid;
+    border-width: 5px;
+    border-width: 5px;
+    margin-top: 4%;
+    margin-left: 5%;
+    width: 40%;
+    background-color: burlywood;
+}
+
+#close-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding-right: 1%;
+    padding-left: 1%;
+    width: calc(3vh + 1%);
+    height: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+
+
+
+/* ///////////////////////// */
+/* this is the experience file that people can click on */
+#experience-div {
+    float: left;
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 5px;
+}
+
+#experience-test {
+    height: 13vh;
+}
+
+/* ///////////////////////// */
+/* this is the top right tab */
+#tab-trc-name{
+    position: relative;
+    top: 0;
+    left: 0;
+    border-bottom: solid;
+    border-width: 5px;
+    width: 100%;
+    background-color: burlywood;
+    overflow: auto;
+}
+
+#tab-trc-name h3{
+    margin: 0;
+}
+
+#close-tab-trc{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: solid;
+    border-width: 5px;
+    padding-right: 1%;
+    padding-left: 2%;
+    width: calc(2vh + 1%);
+    height: auto;
+    overflow: hidden;
+}
+
+#trc-filling {
+    float: left;
+    border: solid;
+    border-width: 4px;
+    width: 96%;
+    height: 92%;
+    margin-left: 1%;
+    margin-top: 1%;
+    margin-right: 1%;
+    margin-bottom: 1%;
+}
+
+#close-tab-trc:hover {
+    background-color: darkblue;
+    transition: background-color 0.4s ease;
+}

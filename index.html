@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href="sauce.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const projectDiv = document.getElementById('project-div');
+        const overlay = document.getElementById('project-text-file');
+        const closeButton = document.getElementById('close-button');
+        const blcFilling = document.getElementById('blc-filling');
+
+        // Function to show the overlay
+        function showOverlay() {
+            overlay.style.display = 'block';
+        }
+
+        // Function to hide the overlay
+        function hideOverlay() {
+            overlay.style.display = 'none';
+        }
+
+        // Event listener for double-click on the project div
+        projectDiv.addEventListener('dblclick', showOverlay);
+
+        // Event listener for the close button
+        closeButton.addEventListener('click', hideOverlay);
+
+        projectDiv.addEventListener('mouseover', function() {
+            blcFilling.innerText = 'This file showcases projects Ive created while in College.';
+        });
+    
+        projectDiv.addEventListener('mouseout', function() {
+            blcFilling.innerText = '';
+        });
+    });
+</script>
+
+
+<body>
+
+<div id = "master-container">
+    <p></p>
+
+    <div id = "left-container">
+
+        <!-- top left tab -->
+        <div id = "top-left-container">
+
+            <!-- this div contains the name of the top left tab -->
+            <div id = "tab-tlc-name">
+                <h3>Matthew Isbell</h3>
+
+                <!-- the X in the corner to close the tab -->
+                <div id = "close-tab-tlc">
+                    <h3 id = "close">X</h3>
+                </div>
+            </div>
+
+            <!-- this is just to make the tabs look a bit nicer -->
+            <div id = "tlc-filling">
+                <h3>test</h3>
+            </div>
+        </div>
+
+        <!-- bottom left tab -->
+        <div id = "bottom-left-container">
+            <!-- div contains the name of the bottom left tab -->
+            <div id = "tab-blc-name">
+                <h3>Properties</h3>
+
+                <!-- the X in the corner to close the tab -->
+                <div id = "close-tab-blc">
+                    <h3 id = "close">X</h3>
+                </div>
+            </div>
+
+            <!-- this is just to make the tabs look a bit nicer -->
+            <div id = "blc-filling">
+                <h3></h3>
+            </div>
+        </div>
+    </div>
+
+    <div id= "top-middle-container">
+        
+        <div id = "tab-tmc-name">
+            <h3>File Explorer</h3>
+
+            <!-- the X in the corner to close the tab -->
+            <div id = "close-tab-tmc">
+                <h3 id = "close">X</h3>
+            </div>
+        </div>
+
+        <!-- this is just to make the tabs look a bit nicer -->
+        <div id = "tmc-filling">
+            
+            <div id = "project-text-file" style = "display: none;">
+                <!-- div contains the name of the file -->
+                <div id = "tab-pf-name">
+                    <h3>Projects</h3>
+                    <!-- the X in the corner to close the tab -->
+                    <button id="close-button">X</button>
+                </div>
+
+                <div id = "tab-pf-contents">
+                    <p>test</p>
+                </div>
+            </div>
+
+            <div id = "project-div">
+                <img id = "project-test" src="file.png">
+                <h3>projects</h3>
+            </div>
+
+            <div id = "experience-div">
+                <img id = "experience-test" src="file.png">
+                <h3>experience</h3>
+            </div>
+        </div>
+        
+    </div>
+
+    <div id = "top-right-container">
+        
+        <div id = "tab-trc-name">
+            <h3>Notes</h3>
+
+            <!-- the X in the corner to close the tab -->
+            <div id = "close-tab-trc">
+                <h3 id = "close">X</h3>
+            </div>
+        </div>
+
+        <!-- this is just to make the tabs look a bit nicer -->
+        <div id = "trc-filling">
+            <h3>test</h3>
+        </div>
+    </div>
+
+    <div id = "bottom-middle-container">
+        <p> test for bottom middle</p>
+    </div>
+
+</div>
+
+</body>
+</html>
