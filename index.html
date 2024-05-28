@@ -7,6 +7,11 @@
     <link rel = "stylesheet" href="sauce.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+
+    <!-- font for the site-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 
 <script>
@@ -19,11 +24,22 @@
         const overlaySkill = document.getElementById('skills-text-file');
         const closeButtonSkill = document.getElementById('close-button-skill');
         var bottomMiddleContainer = document.getElementById('bottom-middle-container');
-        var currentDateTime = new Date().toLocaleString('en-US', {
-            hour: '2-digit',
-            minute: '2-digit',
-            hour12: true
-        });
+        
+        // get current time and update the display
+        function updateTime() {
+            var currentDateTime = new Date().toLocaleString('en-US', {
+                hour: '2-digit',
+                minute: '2-digit',
+                hour12: true
+            });
+            bottomMiddleContainer.innerHTML = `<p>${currentDateTime}</p>`;
+        }
+
+        // Initial call to display the time immediately when the page loads
+        updateTime();
+
+        // Set interval to update the time every second
+        setInterval(updateTime, 1000);
 
         // Function to show the overlay
         function showOverlay() {
@@ -80,11 +96,10 @@
 
 <body>
 
-<!-- this is what will make the lines on the site move
-<div id = "screen-lines" class = "screen-filter"></div>
--->
 
-<div id = "master-container">
+<div id = "screen-lines" class = "screen-filter"></div>
+
+<div id = "master-container" >
     <img id = "background" src="background-wallpaper.jpg">
 
     <div id = "left-container">
@@ -157,7 +172,9 @@
                 </div>
 
                 <div id = "tab-pf-contents">
-                    <p>test</p>
+                    <h2>This website!</h2>
+                    <p>March 2024 - Today</p>
+                    <p> While working on my resume website, I gained valuable insights into the complexities of web development. I learned the importance of building an accessible website, ensuring that all users can navigate and interact with my site. I also discovered the necessity of considering mobile design for a seamless user experience across all devices. Additionally, I became mindful of optimizing JavaScript load times to enhance site performance. Embracing safe programming principles was crucial in maintaining the integrity and security of my project. Finally, I improved my skills in version control by efficiently pulling and pushing changes using GitHub.</p>
                 </div>
             </div>
 

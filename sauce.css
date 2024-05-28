@@ -1,16 +1,34 @@
+
+/* font for the site */
+.poetsen-one-regular {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+* {
+    font-family: Poetsen One;
+}
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
-#master-container{
-    overflow: hidden;
+#custom-cursor {
+    position: fixed;
+    pointer-events: none;
+    transition: transform 0.1s linear;
+}
+
+#master-container {
     display: flex;
     flex-wrap: wrap;
     height: 100vh;
     width: 100%;
+    overflow-y: hidden;
 }
 
 #background {
@@ -19,7 +37,6 @@ html, body {
     height: 100%;
     overflow: hidden;
     z-index: -1;
-
 }
 
 #screen-lines {
@@ -29,7 +46,7 @@ html, body {
       rgba(128, 128, 128, 0.05) 56%,
       rgba(128, 128, 128, 0.05) 100%
     );
-    background-size: 100% 7px;
+    background-size: 100% 4px;
     z-index: 10;
     animation: pan-lines 400s infinite linear;
   }
@@ -76,7 +93,7 @@ which is really just the divs
     border-width: 5px;
     height: 54vh;
     width: 100%;
-    background-color: brown;
+    background-color: #3B6582;
 }
 
 #bottom-left-container{
@@ -85,14 +102,14 @@ which is really just the divs
     margin-top: 3%;
     width: 100%;
     height: 32vh;
-    background-color: grey;
+    background-color: #3B6582;
 }
 
 #top-middle-container{
     float: left;
     border-style: solid;
     border-width: 5px;
-    background-color: red;
+    background-color: #3B6582;
     top: 0;
     left: auto;
     margin-top: 1%;
@@ -102,7 +119,7 @@ which is really just the divs
 
 #top-right-container{
     float: left;
-    background-color: greenyellow;
+    background-color: #3B6582;
     border-style: solid;
     border-width: 5px;
     top: 0;
@@ -120,7 +137,7 @@ which is really just the divs
     border-width: 5px;
     bottom: 0;
     width: 100%;
-    background-color: blueviolet;
+    background-color: #204158;
     height: 4vh;
     margin-top: 0%;
 
@@ -154,7 +171,7 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: blue;
+    background-color: #3B6582;
     overflow: auto;
 }
 
@@ -215,7 +232,7 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: orange;
+    background-color: #3B6582;
     overflow: auto;
 }
 
@@ -264,7 +281,7 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: green;
+    background-color: #3B6582;
     overflow: auto;
 }
 
@@ -334,16 +351,23 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: blue;
+    background-color: #3B6582;
     overflow: auto;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     z-index: 1000;
 }
 
 #tab-pf-contents {
-    width: 100%;
+    width: 99%;
     height: 100%;
     position: relative;
+    margin-left: 1vh;
+    right: 1%;
+}
+
+#tab-pf-contents p {
+    letter-spacing: 1px;
+    line-height: 1.2;
 }
 
 #tab-pf-name h3 {
@@ -357,7 +381,7 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: orange;
+    background-color: #3B6582;
     overflow: hidden;
 }
 
@@ -369,7 +393,7 @@ this will be more divs inside of the original ones
     margin-top: 4%;
     margin-left: 5%;
     width: 40%;
-    background-color: burlywood;
+    background-color: #3B6582;
 }
 
 #close-button {
@@ -425,7 +449,7 @@ this will be more divs inside of the original ones
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: orange;
+    background-color: #3B6582;
     overflow: hidden;
 }
 
@@ -437,7 +461,7 @@ this will be more divs inside of the original ones
     margin-top: 4%;
     margin-left: 5%;
     width: 40%;
-    background-color: burlywood;
+    background-color: #3B6582;
 }
 
 #close-button-skill {
@@ -453,8 +477,13 @@ this will be more divs inside of the original ones
 button {
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-color: #3B6582;
     font-size: 16px;
+    transition-duration: .4s;
+}
+
+button:hover {
+    background-color: #00008b48;
 }
 
 /* ///////////////////////// */
@@ -466,7 +495,7 @@ button {
     border-bottom: solid;
     border-width: 5px;
     width: 100%;
-    background-color: burlywood;
+    background-color: #3B6582;
     overflow: auto;
 }
 
