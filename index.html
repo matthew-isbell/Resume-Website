@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <link rel = "stylesheet" href="sauce.css">
@@ -93,14 +92,13 @@
     });
 </script>
 
-
 <body>
 
 
 <div id = "screen-lines" class = "screen-filter"></div>
 
 <div id = "master-container" >
-    <img id = "background" src="background-wallpaper.jpg">
+    <img id = "background" src="background-wallpaper-2.jpg">
 
     <div id = "left-container">
 
@@ -109,7 +107,7 @@
 
             <!-- this div contains the name of the top left tab -->
             <div id = "tab-tlc-name">
-                <h3>Matthew Isbell</h3>
+                <h3>Information</h3>
 
                 <!-- the X in the corner to close the tab -->
                 <div id = "close-tab-tlc">
@@ -120,7 +118,7 @@
             <!-- this is just to make the tabs look a bit nicer -->
             <div id = "tlc-filling">
                 <h3>Matthew Isbell</h3>
-                <h3>Computer Science Major</h3>
+                <h3>Computer Science & Software Engineering Major</h3>
                 <h3>German Minor</h3>
                 <h3><a href = "https://www.linkedin.com/in/matthew-isbell-/" target="_blank">LinkedIn</a></h3>
                 <h3><a href = "https://github.com/matthew-isbell" target="_blank">GitHub</a></h3>
@@ -161,47 +159,72 @@
         <!-- this is just to make the tabs look a bit nicer -->
         <div id = "tmc-filling">
             
-            <div id = "project-text-file" style = "display: none;">
+            <div id="project-text-file" style="display: none;">
                 <!-- div contains the name of the file -->
-                <div id = "tab-pf-name">
+                <div id="tab-pf-name">
                     <h3>Projects</h3>
                     <!-- the X in the corner to close the tab -->
-                    <div id = "close-button">
+                    <div id="close-button">
                         <button>X</button>
                     </div>
                 </div>
-
-                <div id = "tab-pf-contents">
+            
+                <div id="tab-pf-contents">
+                    <!-- resume website -->
                     <h2>This website!</h2>
-                    <p>March 2024 - Today</p>
-                    <p> While working on my resume website, I gained valuable insights into the complexities of web development. I learned the importance of building an accessible website, ensuring that all users can navigate and interact with my site. I also discovered the necessity of considering mobile design for a seamless user experience across all devices. Additionally, I became mindful of optimizing JavaScript load times to enhance site performance. Embracing safe programming principles was crucial in maintaining the integrity and security of my project. Finally, I improved my skills in version control by efficiently pulling and pushing changes using GitHub.</p>
+                    <p id="tab-pf-date">March 2024 - Today</p>
+                    <p id="tab-pf-desc"> While working on my resume website, I gained valuable insights into the complexities of web development. I discovered the necessity of considering mobile design for a seamless user experience across all devices. Embracing safe programming principles was crucial in maintaining the integrity and security of my project. Finally, I improved my skills in version control by efficiently pulling and pushing changes using GitHub.</p>
+                    <!-- nonprofit site -->
+                    <h2>Website for Black Hills Roadtrip of Hope</h2>
+                    <p id="tab-pf-date">February 2023 - August 2023</p>
+                    <p id="tab-pf-date"><a href="https://www.blackhillsroadtripofhope.org/" target="_blank">https://www.blackhillsroadtripofhope.org/</a></p>
+                    <p id="tab-pf-desc">I learned a lot while working on this nonprofit website. I gained valuable insights into collaborating with clients and blending their needs into the desired result. I learned how Agile development works in web development. One of the most important things I learend was how to utilize HTML, CSS, and JavaScript.</p>
+                    <!-- satellite image generator -->
+                    <h2>Satellite Image Stereo Pair Generator</h2>
+                    <p id="tab-pf-date">December 2023</p>
+                    <p id="tab-pf-date"><a href="https://github.com/matthew-isbell/Stereo-Pair-Generator" target="_blank">https://github.com/matthew-isbell/Stereo-Pair-Generator</a></p>
+                    <p id="tab-pf-desc">This program generates stereo image pairs from a single Ortho-Corrected satellite image, simulating different baseline distances for depth analysis. Designed in Python using image processing libraries like PIL, it enables various viewpoints from a single image capture. Despite being incomplete, extensive documentation is provided for usage. I learned valuable lessons in Agile development, image processing, and problem-solving.</p>
+                    <!-- baby clothes site -->
+                    <h2>E-Commerce Baby Clothes Website</h2>
+                    <p id="tab-pf-date">April 2023</p>
+                    <p id="tab-pf-date"><a href="https://github.com/matthew-isbell/e-commerce-site" target="_blank">https://github.com/matthew-isbell/e-commerce-site</a></p>
+                    <p id="tab-pf-desc">This website was my final project for a web programming class, designed to help new parents find clothes for their children and allow parents with older kids to sell old clothes. Developed using Node, Express, JavaScript, JSON, HTML, and CSS, it features user authentication and dynamic content. Users can search for listings, and add new ones. This project taught me how to create a Node server, communicate with JavaScript files, and dynamically update HTML content.</p>
+                    <!-- c++ program -->
+                    <h2>C++ Text Manipulation Tool</h2>
+                    <p id="tab-pf-date">December 2022</p>
+                    <p id="tab-pf-date"><a href="https://github.com/matthew-isbell/CPP-Text-Manip-Tool" target="_blank">https://github.com/matthew-isbell/CPP-Text-Manip-Tool</a></p>
+                    <p id="tab-pf-desc">This C++ program manipulates text by removing stop words, punctuation, and converting all words to lowercase. It processes text files, such as books, by cleaning and transforming the text and can output n-grams. I learned to integrate multiple classes and functions, efficiently problem-solve errors, and master string manipulation. This project was both educational and enjoyable.</p>
                 </div>
             </div>
-
-            <div id = "project-div">
-                <img id = "project-test" src="file.png">
-                <h3>projects</h3>
-            </div>
-
-            <div id = "skills-text-file" style = "display: none;">
+            
+            <div id="skills-text-file" style="display: none;">
                 <!-- div contains the name of the file -->
-                <div id = "tab-sf-name">
+                <div id="tab-sf-name">
                     <h3>Skills</h3>
                     <!-- the X in the corner to close the tab -->
-                    <div id = "close-button-skill">
+                    <div id="close-button-skill">
                         <button>X</button>
                     </div>
                 </div>
-
-                <div id = "tab-sf-contents">
-                    <p>test</p>
+            
+                <div id="tab-pf-contents">
+                    <!-- skills content -->
+                    <h2>Tools</h2>
+                    <p id="tab-pf-desc"> Throughout my time in College I picked up many skills for programming. One of the skills I am most proud of is my ability to write full programs in command-line editors and text editors. I used Sublime Text for multiple years, which benefited me as I learned how to look for errors in my code for debugging, rather than something like VS Code explicitly telling me what is going wrong. Because of this, I feel I am fit to program and debug programs in any environment. I also used vim for an entire semester as a code editor. This helped me become familiar with the command line, and gave me the opportunity to experience programming without an elaborate GUI. Naturally, I do still have plenty of experience with creating and using environments in Visual Studio and Visual Studio Code. I have also used Eclipse for many personal projects. GitHub and Git are both important tools as now I use them for almost every project I am involved with. Lastly, I have academic experience with Kubernetes and Docker. </p>
+                    <h2>Programming Languages</h2>
+                    <p id="tab-pf-desc">During my four years at Augustana University, I gained proficiency in several programming languages. I began with Python, which I have consistently utilized for over four years. Additionally, I completed coursework in C++ and C, both of which I have applied over the same period. My most extensive experience is with Java, which I used extensively in numerous projects. Furthermore, I completed multiple web design courses, acquiring skills in HTML, CSS, and JavaScript, and working with Express and Node.js for class assignments. Additionally, I undertook a course in database processing, where I learned to work with MySQL.</p>
                 </div>
             </div>
-
-            <div id = "skills-div">
-                <img id = "skills-test" src="file.png">
-                <h3>skills</h3>
+            
+            <div id="project-div">
+                <img id="project-test" src="file.png">
+                <h3>projects</h3>
             </div>
+            
+            <div id="skills-div">
+                <img id="skills-test" src="file.png">
+                <h3>skills</h3>
+            </div>            
         </div>
         
     </div>
@@ -209,7 +232,7 @@
     <div id = "top-right-container">
         
         <div id = "tab-trc-name">
-            <h3>Notes</h3>
+            <h3>About Me</h3>
 
             <!-- the X in the corner to close the tab -->
             <div id = "close-tab-trc">
@@ -219,7 +242,9 @@
 
         <!-- this is just to make the tabs look a bit nicer -->
         <div id = "trc-filling">
-            <h3>test</h3>
+            <p id = "trc-text">My name is Matthew Isbell and I am a recent Computer Science & Software Engineering major at Augustana University in Sioux Falls, SD. I decided to do CS and German simply because they are both passions of mine. German first interested me because of my family background but studying it in high school solidified my passion. This led me to studying in Berlin and perusing language throughout college. The idea of studying computer science has been a dream of mine ever since I was little. I have always been interested in how computer programs work, how games are made, and how websites are put together. Because of this, I knew I wanted to learn as much as I could about the world of Computer Science in college.</p>
+            <p id = "trc-text">Outside of my studies at Augustana, I have multiple hobbies I enjoy doing in my free time. I really enjoy working out and running, as I want to be as healthy and fit as I can. I also enjoy cooking and baking meals. Even though I try to be as healthy as I can, that doesn’t stop me from cooking unhealthy things! I think my favorite stuff to make is desserts, but you really can’t go wrong with anything.</p>
+            <p id = "trc-text">One of my hobbies I spend a lot of time with is playing and modifying games. I really enjoy playing games to unwind after a long day. My favorite games to play are Minecraft, the Dark Souls franchise, and various city builder games. When I want to really dive into something new, I love taking apart games and learning how to make mods for them. I have created a few Minecraft and Dark Souls mods for fun but haven’t published many. I also enjoy working on various programming side projects. I have ideas for many games and apps and am slowly making progress on all of them. I hope to one day have a published app or program that people can enjoy.</p>
         </div>
     </div>
 
